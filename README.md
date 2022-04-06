@@ -38,8 +38,39 @@ A summary of the access policies in Network Security Group (NSG) at Azure
 | Web1      | No                  | JumpBox 			|
 | Web2      | No                  | JumpBox 			|
 
+## Elk Configuration
+
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+ 1. The main advantage of automating the installation process is that you can deploy multiple servers quickly and easily without having to manually configure each server.
+
+The playbook implements the following tasks:
+1. Configures the machine with Docker.
+2. Installs Docker.io and pip3.
+3. Downloads and configures ELK docker container.
+4. Activates ports 5601, 9200, and 5044.
+
+The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+
+## Target Machines & Beats
+This ELK server is configured to monitor the following machines:
+1. Web-1 10.0.0.6
+2. Web-2 10.0.0.5
+
+We have installed the following Beats on these machines:
+1. Filebeat
+2. Metricbeat
+
+These Beats allow us to collect the following information from each machine:
+1. Filebeat watches for log files/locations and collects events related to those files and locations. 
+2. Metricbeat records metrics and statistical data from the operating system and services that are running on the server.
 
 
-ELK Stack Project HW 13
-Date: April 06-04-2022
-By Asad
+## Using the Playbook
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+
+SSH into the control node and follow the steps below:
+- Copy the install_elk_yml file to your /etc/ansible directory.
+- Update the host file to include the IP Addresses of your Web-1, Web-2, and ELK server as well as assign python3 as the interpreter.
+- Run the playbook, and navigate to your ELK server to check that the installation worked as expected.
+
+Navigate to http://publicip(elkserver):5601 to check that the installation worked as expected. 
