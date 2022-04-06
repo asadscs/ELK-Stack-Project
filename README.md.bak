@@ -51,9 +51,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-
-
-### Target Machines & Beats
+## Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 1. Web-1 10.0.0.6
 2. Web-2 10.0.0.5
@@ -67,7 +65,7 @@ These Beats allow us to collect the following information from each machine:
 2. Metricbeat records metrics and statistical data from the operating system and services that are running on the server.
 
 
-### Using the Playbook
+## Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
@@ -76,7 +74,3 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to your ELK server to check that the installation worked as expected.
 
 Navigate to http://publicip(elkserver):5601 to check that the installation worked as expected. 
-
-ELK Stack Project HW 13
-Date: April 06-04-2022
-By Asad
