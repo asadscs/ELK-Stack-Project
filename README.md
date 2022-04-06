@@ -1,8 +1,7 @@
 # ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
-
 Cloud Network Diagram
+The files in this repository were used to configure the network depicted below.
 
 ![Diagram](Diagrams/Network-Diagram.png)
 
@@ -13,7 +12,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - [metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml.txt)
 
 
-The configuration details of each machine may be found below.
+The configuration details of each virtual machine is as below.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
