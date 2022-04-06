@@ -11,7 +11,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - [filebeat-playbook.yml](Ansible/filebeat-playbook.yml.txt)
 - [metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml.txt)
 
-# Description
+## Description
 The purpose of this network is to expose a loadbalance and monitored instance of DVWA a Volunerable web application. Load balancer ensure that the application is available by checking its health probes. If Web1 server is down it automatically switch to Web2
 ELK server monitor the vulnerable VMs for changes to the log data and system metrics.
 
@@ -24,7 +24,7 @@ The configuration details of each virtual machine is as below.
 | Web2     | Web Server 2 | 10.0.0.6 | Linux            |
 | ELK Stack| ELK Stack    | 10.2.0.4 | Linux            |
 
-# Access Policies
+## Access Policies
 The virtual machine (VMs) on internal network VNET are not exposed to the public, Web1 and Web2 are behind firewall.
 JumpBox VM machine only can accept connections from the Internet on port 22, is only allowed from dedicated client IP addresses.
 All other VMs e.g. Web1, Web2 and ELK server can only be accessed by Ansible Docker Container at JumpBox.
