@@ -2,7 +2,7 @@
 
 ### Cloud Network Diagram
 
-![Diagram](Diagrams/Network-Diagram-V3.png)
+![Diagram](Diagrams/Network-Diagram.png)
 
 These files have been tested and used to create a live ELK deployment on Azure. These can be used to recreate the entire deployment as pictured above. Alternatively, select portions of the playbook files may be used to install only certain pieces of it, such as Ansible Container, ELK, Filebeat and Metricbeat.
 
