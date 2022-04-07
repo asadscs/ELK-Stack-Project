@@ -25,7 +25,7 @@ The configuration details of each virtual machine is as below.
 | JumpBox  | JumpBox      | 10.0.0.4 | Linux            |
 | Web1     | Web Server 1 | 10.0.0.5 | Linux            |
 | Web2     | Web Server 2 | 10.0.0.6 | Linux            |
-| ELK Stack| ELK Stack    | 10.2.0.4 | Linux            |
+| ELK Stack| ELK Server   | 10.2.0.4 | Linux            |
 
 ## Access Policies
 The virtual machine (VMs) on internal network VNET are not exposed to the public, Web1 and Web2 are behind firewall.
@@ -91,6 +91,7 @@ Commands to run the playbooks in Ansible container:
 If configured correctly, the url should produce this screen:
 
 ![Diagram](Images/kibana-1.png)
+![Diagram](Images/kibana-2.png)
 
 
 
