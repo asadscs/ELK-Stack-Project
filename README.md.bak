@@ -1,4 +1,4 @@
-# ELK Stack Deployment
+# ELK Stack Deployment - Project 1
 
 The files in this repository were used to configure the network depicted below.
 ### Cloud Network Diagram
@@ -70,6 +70,34 @@ SSH into the control node and follow the steps below:
 - Copy the install_elk_yml file to your /etc/ansible directory.
 - Update the host file to include the IP Addresses of your Web1, Web2, and ELK server as well as assign python3 as the interpreter.
 - Run the playbook, and navigate to your ELK server to check that the installation worked as expected.
+
+
+### Using the Playbook
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+
+SSH into the control node and follow the steps below:
+- Copy the Filebeat-configuration.yml file to the ELK VM.
+- Update the hosts file to include webservers 10.0.1.7, 10.0.1.8, 10.0.1.9, 10.0.1.10
+- Run the playbook, and navigate to Kibana to check that the installation worked as expected.
+
+### Using the Playbook
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+
+SSH into the control node and follow the steps below:
+- First, copy install-elk.yml into /etc/ansible
+- Update the hosts file located in /etc/ansible to include IPs 10.0.0.5 and 10.0.0.6 under [webservers] and 10.1.0.5 under [elk]. Be sure to include ansible_python_interpreter=/usr/bin/python3 after each IP entry
+- Run the playbook with "ansible-playbook install-elk.yml"
+- SSH into the ELK-VM and run "sudo docker ps" to ensure the elk container was properly installed and is running
+- After ensuring the elk container is up and running, navigate to http://20.83.202.36:5601/app/kibana on your local PC to access Kibana
+
+- The playbook is install-elk.yml and needs to be in /etc/ansible
+- /etc/ansible/hosts within the Ansible control node needs to be updated with the correct IPs of the VMs as stated above. Within the playbook files, you specify the machines you want the playbook to run on after "hosts:". For Web-1 and Web-2, it would be "hosts: webservers" and for the ELK-VM, it would be "hosts: elk"
+- Navigate to http://20.83.202.36:5601/app/kibana to confirm that the ELK server is running.
+
+To run the playbooks, within your Ansible control node, run:
+- ansible-playbook install-elk.yml
+- ansible-playbook filebeat-playbook.yml
+- ansible-playbook metricbeat-playbook.yml
 
 
 SSH into the control node and follow the steps below:
