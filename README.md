@@ -93,7 +93,11 @@ If configured correctly, the url should produce this screen:
 ![Diagram](Images/kibana-1.png)
 ![Diagram](Images/kibana-2.png)
 
+## Kibana LOG4J Vulnerability 
 
+During my testing I have found that Kibana/ELK stack ElasticSearch and LogStash uses Vulnerable LOG4J version.
+
+![Diagram](Images/log4j.png)
 
 
 
