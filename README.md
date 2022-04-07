@@ -3,7 +3,7 @@
 The files in this repository were used to configure the network depicted below.
 ### Cloud Network Diagram
 
-![Diagram](Diagrams/Network-Diagram.png)
+![Diagram](Diagrams/Network-Diagram-V2.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. These can be used to either recreate the entire deployment as pictured above. Alternatively, select portions of the playbook files may be used to install only certain pieces of it, such as Ansible Container, Filebeat and Metricbeat.
 
