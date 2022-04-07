@@ -1,5 +1,12 @@
 # ELK Stack Deployment - Project 1
 
+- Description
+- Access Policies
+- ELK Configuration
+- Target VMs & Beats
+- Using the Playbook
+- Kibana LOG4J Vulnerability
+
 The files in this repository were used to configure the network depicted below.
 ### Cloud Network Diagram
 
@@ -41,7 +48,7 @@ A summary of the access policies in Network Security Group (NSG) at Azure
 | Web1      | No                  | JumpBox 			|
 | Web2      | No                  | JumpBox 			|
 
-## Elk Configuration
+## ELK Configuration
 
 Ansible is used to automate configuration of the ELK machine. No configuration is performed manually, which make it a fast deployment on multiple server. 
 
@@ -53,7 +60,7 @@ The playbook implements/performs the following tasks:
 5. Increases virtual memory to a value of "262144"
 6. Allows the docker sercice to be enabled upon boot
 
-## Target Machines & Beats
+## Target VMs & Beats
 This ELK server is configured to monitor the following virtual machines:
 1. Web1 10.0.0.5
 2. Web2 10.0.0.6
