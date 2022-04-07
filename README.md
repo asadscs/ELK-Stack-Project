@@ -1,18 +1,10 @@
 # ELK Stack Deployment - Project 1
 
-- Description
-- Access Policies
-- ELK Configuration
-- Target VMs & Beats
-- Using the Playbook
-- Kibana LOG4J Vulnerability
-
-The files in this repository were used to configure the network depicted below.
 ### Cloud Network Diagram
 
 ![Diagram](Diagrams/Network-Diagram-V3.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. These can be used to either recreate the entire deployment as pictured above. Alternatively, select portions of the playbook files may be used to install only certain pieces of it, such as Ansible Container, Filebeat and Metricbeat.
+These files have been tested and used to create a live ELK deployment on Azure. These can be used to recreate the entire deployment as pictured above. Alternatively, select portions of the playbook files may be used to install only certain pieces of it, such as Ansible Container, ELK, Filebeat and Metricbeat.
 
 - [install-elk.yml](Ansible/filebeat-playbook.yml)
 - [filebeat-playbook.yml](Ansible/roles/filebeat-playbook.yml)
@@ -102,7 +94,7 @@ If configured correctly, the url should produce this screen:
 
 ## Kibana LOG4J Vulnerability 
 
-During my testing I have found that Kibana/ELK stack ElasticSearch and LogStash uses Vulnerable LOG4J version.
+During my testing I  found that Kibana/ELK stack ElasticSearch and LogStash uses Vulnerable LOG4J version.
 
 ![Diagram](Images/log4j.png)
 
