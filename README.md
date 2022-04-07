@@ -7,9 +7,12 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. These can be used to either recreate the entire deployment as pictured above. Alternatively, select portions of the playbook files may be used to install only certain pieces of it, such as Ansible Container, Filebeat and Metricbeat.
 
-- [install-elk.yml](Ansible/filebeat-playbook.yml.txt)
-- [filebeat-playbook.yml](Ansible/filebeat-playbook.yml.txt)
-- [metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml.txt)
+- [install-elk.yml](Ansible/filebeat-playbook.yml)
+- [filebeat-playbook.yml](Ansible/roles/filebeat-playbook.yml)
+-- [filebeat-config.yml](Ansible/files/filebeat-config.yml)
+- [metricbeat-playbook.yml](Ansible/roles/metricbeat-playbook.yml)
+-- [metricbeat-config.yml](Ansible/files/metricbeat-config.yml)
+
 
 ## Description
 The purpose of this network is to expose a loadbalance and monitored instance of DVWA a Volunerable web application. Load balancer ensure that the application is available by checking its health probes. If Web1 server is down it automatically switch to Web2
@@ -75,10 +78,10 @@ SSH into the control node and follow the steps below:
 - After ensuring the elk container is up and running, Navigate to http://ELK-PublicIP:5601 to check that the Kibana installation. 
 
 Commands to udpate host and config.yml files:
-nano ansible.cfg
-nano hosts
-nano metricbeat-config.yml
-nano filebeat-config.yml
+- nano ansible.cfg
+- nano hosts
+- nano metricbeat-config.yml
+- nano filebeat-config.yml
 
 Commands to run the playbooks in Ansible container:
 - ansible-playbook ./install-elk.yml
